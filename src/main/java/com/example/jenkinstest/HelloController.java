@@ -2,6 +2,7 @@ package com.example.jenkinstest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HelloController {
@@ -9,7 +10,7 @@ public class HelloController {
         String s = "3";
         String st2 = "4";
     }
-    @GetMapping("/hello")
+    @RequestMapping("/hello")
     public String hello() {
         return "hello";
     }
